@@ -1,5 +1,5 @@
-# Repositorio de Desafios DIO 
-Desafio de pojeto sobre Git/Git-hub
+# Desafios DIO - Projetos
+Repositorio de desafio dos pojeto sobre Git/Git-hub
 
 ## Links
 [Linguagem Markedown](www.markdownguide.org/getting-started/)
