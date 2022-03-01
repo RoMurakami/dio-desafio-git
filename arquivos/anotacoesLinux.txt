@@ -1,0 +1,36 @@
+Criar ou substituir arquivos atraves de um comando ">" (Maior que)
+
+head - 10 primeiras linhas do arquivo
+tail - 10 ultimas linhas do arquivo
+
+">>" - adiciona para arquivo
+
+Redirecionamentocom "|"
+com o comando tail
+Sintaxe
+tail nomeDoArquivo | grep (busca dentro do arquivo por uma palavra)
+paginação
+facilitar a leitura do arquivo 
+cat arquivo | more (mais)
+cat arquivo | less (:)
+saida crtl+z
+
+& e &&
+
+& - cat arquivo & outro arquivo
+2 saidas
+separa os arquivos
+
+&& - cat arquivo && outro arquivo
+uma saida de arquivo
+
+criação de pasta
+mkdir nome da pasta && cd nome da pasta
+
+file - mostra o tipo do arquivo e pasta
+
+whatis + comando - oque faz o comando
+
+
+
+
