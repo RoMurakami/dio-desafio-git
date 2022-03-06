@@ -1,0 +1,326 @@
+Criar ou substituir arquivos atraves de um comando ">" (Maior que)
+
+head - 10 primeiras linhas do arquivo
+tail - 10 ultimas linhas do arquivo
+cal - exibe o calendario
+
+">>" - adiciona para arquivo
+
+Redirecionamentocom "|"
+com o comando tail
+Sintaxe
+tail nomeDoArquivo | grep (busca dentro do arquivo por uma palavra)
+paginação
+facilitar a leitura do arquivo 
+cat arquivo | more (mais)
+cat arquivo | less (:)
+saida crtl+z
+
+& e &&
+
+& - cat arquivo & outro arquivo
+2 saidas
+separa os arquivos
+
+&& - cat arquivo && outro arquivo
+uma saida de arquivo
+
+criação de pasta
+mkdir nome da pasta && cd nome da pasta
+
+file - mostra o tipo do arquivo e pasta
+
+whatis + comando - oque faz o comando
+
+comando sobre sistemas
+
+cpuinfo -- informação do processador
+lspci -- hardware conectado via pci
+uname -- nome do kernell
+uname - r -- versão do kernell
+uname - m -- versão da arquitetura
+reboot -- reinicia o sistema
+shutdown -- abrir ajuda paa ver parametro
+lscpu - informações da cpu
+lshw -- lista o hardware encontrado
+lshw - short - mostra caminho do hardware 
+
+separando o arquivo por sessão
+
+echo "" saida em terminal
+
+-------------------------------------------------
+
+Identificação de rede
+
+ifconfig
+hostname
+hostname -I -- mostra o IP
+hostname -i -- mostra loopback
+ping --
+dig -- informações de dns 
+dig + endereço de rede +short
+whois -- informação de dns e contato
+finger
+
+
+last reboot -- mostra informações de reinicialização do sistema 
+route -n --mostra trabela de roteamento
+time comando-- mostra tempo do processo
+uptime -- mostra tempo que o sitema esta rodando
+
+cowsay instalar
+xcowsay
+cmatrix
+
+comandos para desligar a maquina
+
+init 0
+telinit 0
+halt --autenticar 
+seq -- imprime sequencia de numeros
+alias -- troca nome do comando
+whereis -- caminho do programa
+which -- exibe só o caminho
+lougout -- encerra a sessão
+
+=================================================
+
+uso do upgrade
+sudo apt upgrade nomepacote
+
+remover pacote
+sudo apt remove nomepacote
+
+atualização de sistema
+sudo apt update && apt upgrade (executar com sudo su)
+elevar privilegio - sudo su
+
+pkgs.org
+rpm.pbone.net
+
+instalar .deb
+dpkg - gerenciador de pacotes instala ou remove pacote tipo deb
+
+
+no linux acessar pkgs.org - docker - referente ao so
+clicar na versão para instalar e excolher a versão
+copiar o link na sessão download e colar no navegador - salvar o arquivo
+
+- no terminal - mudar para o usuario su usuario
+- entrar na pasta 
+- comando dpkg -i pacote
+- sudo dpkg -i pacote
+
+obter descrição do pacote
+sudo dpkg -I pacote.deb traz informações do pacote
+
+remover deb
+sudo dpkg -r nomedopacote com nome a partir do comando -I
+package nomecli
+
+getfedora.org/pt_br
+*.rpm
+
+uso do rpm
+rpm -ivh pacote.rpm
+
+rpm
+uso
+rpm -U pacote.rpm
+
+remover pacote rpm
+rpm -e pacote.rpm
+
+
+install yum 
+
+yum install pacote
+
+sudo yum install nomepacote
+
+yum update nomepacote
+yum remove nomepacote
+
+=============================================
+usuarios
+adduser + nomeusuario
+elevar usuario
+sudo adduser 
+
+trocar usuario
+su nomedousuario
+ir para diretorio cd ~
+
+alterar senha de usuario
+passwd +nomedousuario
+
+========================================
+como criar senha forte
+ZENIT
+POLAR
+
+T35!N!
+============================================
+
+sempre criar uma senha forte
+
+informações de todos os login
+lastlog
+last
+logname usuario logado no sistema
+
+id exibe identificados do usuario
+uid - gid - 
+
+exibir todos os usuarios
+cat /etc/passwd
+
+remover usuario e pasta pessoal
+
+userdel -r nomedo udousuario
+fechar o terminal
+elevar privilegio
+
+======================================
+grupos -controle 
+exibir todos os grupos
+cat /etc/group
+
+groups
+criar grupo
+sudo addgrup - nomedogroup
+elevar privilegio
+
+====================================
+adicionar usuario ao grupo
+adduser nomeusuario nomegrupo
+gpasswd -a nomedousuario nomedogrupo(usuario precisa ser sudoers)
+
+remover
+sudo gpasswd -d nomedousuario nomedogrupo
+
+remover grupo
+sudo groupdel nomedogrupo
+
+cat /etc/group | grep nome
+
+
+permissões em diretorios
+
+r-read - leitura
+w-write - escrita
+x-eXecution - execução
+
+ls - lh
+1 diretorio ou arquivo
+'d' - diretorio
+'-' - arquivo
+
+2 dono
+rwx - total
+-wx - escrever e executar
+r-x - ler e executar
+rw- - ler e escrever
+
+3 grupo
+rwx - total
+-wx - escrever e executar
+r-x - ler e executar
+rw- - ler e escrever
+4 outros
+rwx - total
+-wx - escrever e executar
+r-x - ler e executar
+rw- - ler e escrever
+
+muda permissão do arquivo ou diretorio
+sistema octal 0 a 7
+
+1 digito dono
+2 digito grupo
+3 digito outros
+
+chmod  - numeroModoOctal nodoarquivo 
+owner 
+r - 4
+w - 2
+x - 1
+somar as permissões ddo tipo = 7
+
+group
+r - 4
+w - 2
+x - 1
+
+other
+r - 4
+w - 2
+x - 1
+
+=====================================
+compactar e descompactar e arquivamento
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
